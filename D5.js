@@ -41,14 +41,14 @@ for(let i = 0; i<pets2.length; i++){
   console.log(pets2[i])
 
 }
-
-//Ho commentato questo per rendere visibile in console solo l'array pets originale
-
 */
+
+
+
 /* ESERCIZIO 4
     Scrivi del codice per spostare il primo elemento dall'array "pets" in ultima posizione.
 */
-
+/*Ho commentato le ultime due risposte per far derivare questo esercizio in console.log solo dall'array pets originale come dice la consegna*/
 
 let dog = pets.shift()
 pets.push(dog)
@@ -57,9 +57,6 @@ for(let i = 0; i<pets.length; i++){
   
   console.log(pets[i])
 }
-  
-
-
 
 /* ESERCIZIO 5
     Dato il seguente array di oggetti, scrivi del codice per aggiungere ad ognuno di essi una proprietà "licensePlate" con valore a tua scelta.
@@ -109,11 +106,12 @@ console.log(cars)
     Successivamente, rimuovi l'ultimo elemento della proprietà "trims" da ogni auto.
 */
 //La prima parte dell'esercizio la commento per rendere meglio visibile la seconda
-//Object.assign(cars, {brand: '', model: '', color: '', trims: [],LicencePlate: ""})
+let suzuki = {brand: 'Suzuki', model: 'Ignis', color: 'orange', trims: ['steal', 'titanium'],LicencePlate: "AA000BB"}
+Object.assign(cars, {suzuki})
 
-//console.log(cars)
+console.log(cars)
   
-for(let i = 0; i<cars.length; i++){
+for(let i = 0; i<4; i++){
   switch(cars[i]){
     case cars[0] : 
     delete cars[0].trims[2]
@@ -124,6 +122,9 @@ break;
 case cars[2] :
   delete cars[2].trims[2]
 break;
+default :
+  delete suzuki.trims[1]
+break;
 }
 }
 console.log(cars)
@@ -133,7 +134,7 @@ console.log(cars)
 */
 const justTrims = []
 
-Object.assign(justTrims, [{trims: "titanium"}, {trims: "allure"}, {trims: "life"}])
+Object.assign(justTrims, [{trims: "titanium"}, {trims: "allure"}, {trims: "life"}, {trims: "steal"}])
 
 console.log(justTrims)
 
@@ -145,9 +146,12 @@ console.log(justTrims)
 
 for(let i = 0; i<cars.length; i++){
   if(cars[i].color.slice(0,1)== 'b'){
-    console.log('Fizz')
-  }else{console.log('Buzz')}
+    console.log('Fizz')}
+  else{console.log('Buzz')}
+  
   }
+  if(suzuki)
+{console.log('Buzz')}
 
 
 
