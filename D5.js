@@ -86,36 +86,20 @@ const cars = [
 ]
 
 
-const licensePlate = {
-  licensePlate: "alfa",
-  licensePlate: "beta",
-  licensePlate: "gamma"
+for(let i = 0; i<cars.length; i++){
+  switch(cars[i]){
+    case cars[0] : 
+Object.assign(cars[0], {LicencePlate: "AA001BB"})
+break;
+case cars[1] :
+    Object.assign(cars[1], {LicencePlate: "AA002BB"})
+break;
+case cars[2] :
+    Object.assign(cars[2], {LicencePlate: "AA003BB"})
+break;
 }
-
-
-for (let i = 0; i < cars.length; i++) {
-
-  switch (licensePlate.licensePlate) {
-  case "alfa":
-    cars.push(licensePlate.licensePlate[i]);
-  break;
-  case "beta":
-       cars.push(licensePlate.licensePlate[i]);
-  break;
-case "gamma":
-  cars.push(licensePlate.licensePlate[i]);
-  break;
-  default:
-    break;
-  }
 }
-
-
-
-console.log("Esercizio 5: ", cars)
-
-
-
+console.log(cars)
 
 
 
@@ -124,16 +108,48 @@ console.log("Esercizio 5: ", cars)
     Scrivi del codice per aggiungere un nuovo oggetto in ultima posizione nell'array "cars", rispettando la struttura degli altri elementi.
     Successivamente, rimuovi l'ultimo elemento della proprietà "trims" da ogni auto.
 */
+//La prima parte dell'esercizio la commento per rendere meglio visibile la seconda
+//Object.assign(cars, {brand: '', model: '', color: '', trims: [],LicencePlate: ""})
+
+//console.log(cars)
+  
+for(let i = 0; i<cars.length; i++){
+  switch(cars[i]){
+    case cars[0] : 
+    delete cars[0].trims[2]
+break;
+case cars[1] :
+  delete cars[1].trims[1]
+break;
+case cars[2] :
+  delete cars[2].trims[2]
+break;
+}
+}
+console.log(cars)
 
 /* ESERCIZIO 7
     Scrivi del codice per salvare il primo elemento della proprietà "trims" di ogni auto nel nuovo array "justTrims", sotto definito.
 */
 const justTrims = []
 
+Object.assign(justTrims, [{trims: "titanium"}, {trims: "allure"}, {trims: "life"}])
+
+console.log(justTrims)
+
+
 /* ESERCIZIO 8
     Cicla l'array "cars" e costruisci un if/else statament per mostrare due diversi messaggi in console. Se la prima lettera della proprietà
     "color" ha valore "b", mostra in console "Fizz". Altrimenti, mostra in console "Buzz".
 */
+
+for(let i = 0; i<cars.length; i++){
+  if(cars[i].color.slice(0,1)== 'b'){
+    console.log('Fizz')
+  }else{console.log('Buzz')}
+  }
+
+
 
 /* ESERCIZIO 9
     Utilizza un ciclo while per stampare in console i valori del seguente array numerico fino al raggiungimento del numero 32.
@@ -141,14 +157,14 @@ const justTrims = []
 const numericArray = [
   6, 90, 45, 75, 84, 98, 35, 74, 31, 2, 8, 23, 100, 32, 66, 313, 321, 105,
 ]
-
-for (i=0; i<numericArray.length; i++) {
+let i = 0
+while ( i<numericArray.length) {
   console.log(numericArray[i])
   if(numericArray[i] == 32){
     break;
     
   }
-  
+  i++
 }
 
 /* ESERCIZIO 10
@@ -158,16 +174,31 @@ for (i=0; i<numericArray.length; i++) {
 */
 const numbers = [7, 12, 19, 21, 4]
 const charactersArray = ["g", "n", "u", "z", "d"]
-switch(charactersArray){
-  case "g" : numbers[0].push(charactersArray[0])
-  break
-  case "n" : numbers[1].push(charactersArray[1])
-  break
-  case "u" : numbers[2].push(charactersArray[2])
-  break
-  case "z" : numbers[3].push(charactersArray[3])
-  break
-  case "d" : numbers[4].push(charactersArray[4])
+
+for(i=0; i<charactersArray.length; i++){
+switch(charactersArray[i]){
+  case "g" : 
+  delete charactersArray[i];
+  charactersArray.push(numbers[i])
+  break;
+  case "n" : 
+  delete charactersArray[i];
+  charactersArray.push(numbers[i])
+  break;
+  case "u" : 
+  delete charactersArray[i];
+  charactersArray.push(numbers[i])
+  break;
+  case "z" : 
+  delete charactersArray[i];
+  charactersArray.push(numbers[i])
+  break;
+  case "d" : 
+  delete charactersArray[i];
+  charactersArray.push(numbers[i])
+  default:
+    break;
+}
 }
 
 console.log(charactersArray)
