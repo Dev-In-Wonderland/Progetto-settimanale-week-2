@@ -1,0 +1,170 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+/*Header*/
+#logo {
+    background-color: rgb(19 19 31);
+    width:100%;
+    margin: 0
+}
+
+
+#logo-amazon-header {
+    width: 10%;
+    padding-left: 2em;
+}
+
+#menu-nav {
+    background-color: rgb(32 32 61);
+    height: 1.8em;
+    padding-top: 7px;
+}
+
+.link-nav {
+    color: white;
+    text-decoration: none;
+    padding: 0 0.8em
+}
+
+#first-link-nav {
+    padding-left: 3em;
+}
+
+
+/*Main*/
+
+main{
+    width:95%;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top: 1.2em;
+    padding-right: 1em;
+     
+}
+
+#main-background {
+    background-color: rgb(238 229 229)
+}
+
+#first-section {
+    background-color: rgb(255, 132, 0);
+    color: white;
+    padding: 0 36em;
+}
+
+#second-section {
+    background-image: url(bg-image.png);
+    height: 12em;
+
+}
+
+#title {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#first-title {
+    font-size: 1.5em;
+    padding-top: 2em
+}
+
+#second-title {
+    font-size: 1em;
+}
+
+#p-first-section {
+    margin:0
+}
+
+#gift{
+    font-size: 1em;
+    margin:0;
+    padding: 1em 2em 0 2em
+}
+#shop{
+    font-size: 0.8em;
+    padding-left: 1em;
+    text-decoration: none;
+    color: #1058a3;
+    font-weight: 500
+}
+
+.img-third-section {
+    display: inline-block;
+    border-radius: 19px;
+    width: 18em;
+    height: 20.5em;
+    margin: 1em 1.6em
+
+}
+
+#background-box {
+    background-color: white;
+    margin-bottom: 1.5em;
+    margin-top: 1.5em;
+}
+
+#block-img-third-section {}
+
+
+#img-fourth-section {
+    height: 19em;
+    width: 1413px;
+}
+#img-fifth-section {
+    height: 19em;
+    width: 1413px;
+}
+
+.play {
+    font-size: 1em;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 1.5em;
+}
+
+.shop-2 {
+    font-size: 0.8em;
+    padding-left: 1em;
+    text-decoration: none;
+    color: #1058a3;
+    font-weight: 500
+}
+
+/*Aside e Footer*/
+aside {
+    background-color: rgb(32 32 61);
+    height: 2.8em;
+    text-align: center;
+    padding-top: 1em
+    
+}
+
+
+footer {
+    height: 12em;
+    background-color: rgb(19 19 31);
+    width:100%;
+    margin: 0
+}
+
+
+#logo-amazon-footer {
+    width: 12%;
+    padding-top: 4em;
+    padding-left: 41.5em;
+}
+    
+
+
+
+#link-aside {
+    color: white;
+    font-size: 1em;
+    font-weight: 500;
+}
